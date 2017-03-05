@@ -1,0 +1,65 @@
+{
+    pageSetup: {
+        size: "letter",
+        margin-top: ".25inch",
+        margin-bottom: ".25inch",
+        margin-left: ".50inch",
+        margin-right: ".50inch"
+    },
+
+    linkColor: black,
+
+    styles: {
+        bodytext: {
+            alignment: TA_LEFT,
+            fontSize: 10.5,
+            spaceBefore: 0
+        }, 
+
+        bullet-list: {
+            spaceBefore: 0,
+            spaceAfter: 10
+        },
+
+        bullet-list-item: {
+            spaceBefore: 0,
+            spaceAfter: 0
+        },
+
+        heading1: {
+            parent: heading,
+            fontName: stdBold, 
+            fontSize: 11,
+            spaceBefore: 11,
+            spaceAfter: 0
+        },
+
+        heading2: {
+            parent: heading,
+            fontName: stdBold, 
+            fontSize: 10.5,
+            spaceBefore: 0,
+            spaceAfter: 0
+        },
+
+        table: {
+            spaceBefore: 0,
+            spaceAfter: 0,
+            commands: [
+                [LEFTPADDING, [0,0], [-1,-1], 0],
+                [BOTTOMPADDING, [0,0], [-1,-1], 0],
+                [TOPPADDING, [0,0], [-1,-1], 0],
+                [LINEABOVE, [0, 0 ], [ -1, -2 ], .5, black ]
+            ]
+        },
+
+        title: {
+            parent: heading,
+            fontName: stdBold,
+            fontSize: 13,
+            alignment: TA_LEFT,
+            keepWithNext: false,
+            spaceAfter: 0
+        }
+    }
+}
